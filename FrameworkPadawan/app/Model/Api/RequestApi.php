@@ -14,7 +14,6 @@ Class RequestApi {
         $setopt1 = curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $setopt2 =  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         $resultado = json_decode(curl_exec($ch));
-        //$var = var_dump($resultado);
     
         // Separa os dados especificos
         foreach ($resultado as $ator) {
@@ -45,7 +44,6 @@ Class RequestApi {
         $setopt1 = curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $setopt2 =  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         $resultado = json_decode(curl_exec($ch));
-        //$var = var_dump($resultado);
     
         // Separa os dados especificos
         foreach ($resultado as $ator) {
@@ -53,16 +51,7 @@ Class RequestApi {
         }
         return $valor;
     }
-
-    public function incrementId($previousID) {
-        $idNumber = $idNumber + $previousID;
-        
-    }
 }
-
-$teste = new RequestApi();
-$teste->curlApi('id');
-
 ?>
 
 
