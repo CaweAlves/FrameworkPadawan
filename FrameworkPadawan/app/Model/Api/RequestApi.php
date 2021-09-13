@@ -18,9 +18,7 @@ Class RequestApi {
     
         // Separa os dados especificos
         foreach ($resultado as $ator) {
-            //var_dump($ator);
             $valor = $ator->$dado. "<br>";
-            //echo $id;
         }
         return $valor;
     }
@@ -32,13 +30,10 @@ Class RequestApi {
         $setopt1 = curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $setopt2 =  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         $resultado = json_decode(curl_exec($ch));
-        //$var = var_dump($resultado);
     
         // Separa os dados especificos
         foreach ($resultado as $ator) {
-            //var_dump($ator);
             $valor = $ator->$dado. "<br>";
-            //echo $id;
         }
         return $valor;
     }
@@ -54,9 +49,7 @@ Class RequestApi {
     
         // Separa os dados especificos
         foreach ($resultado as $ator) {
-            //var_dump($ator);
             $valor = $ator->$dado. "<br>";
-            //echo $id;
         }
         return $valor;
     }
@@ -69,8 +62,6 @@ Class RequestApi {
 
 $teste = new RequestApi();
 $teste->curlApi('id');
-//var_dump($teste)
-//echo RequestApi::curlApi('id')
 
 ?>
 
