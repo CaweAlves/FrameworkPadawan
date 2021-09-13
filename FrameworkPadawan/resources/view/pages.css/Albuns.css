@@ -1,0 +1,27 @@
+body{
+    background-color:#191919;
+}
+main{
+    margin-left: 150px;
+
+}
+p{  
+    text-align: center;
+    color: #fff;
+}
+.container{
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 10px 12px;   
+    background-color: #1b1818
+    ;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+img:hover{
+    transform: scale(1.1);
+    transition: .3s transform;   
+}

@@ -1,0 +1,16 @@
+{
+    "name":"padawan/estagio",
+    "autoload":{
+        "psr-4": {
+            "App\\":"app"
+        }
+        
+    },
+    "authors": [
+        {
+            "name": "Cawe Alves",
+            "email": "cawe.wewe04@gmail.com"
+        }
+    ]
+    
+}
