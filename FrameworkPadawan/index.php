@@ -14,9 +14,4 @@ INCLUDE __DIR__.'/routes/pages.php';
 // IMPRIMO O RESPONSE DA ROTA
 $obRouter->run()->sendResponse();
 
-// DEBUGE
-// echo "<pre>";
-// print_r($variavel);
-// echo "</pre>";
-
 ?>
